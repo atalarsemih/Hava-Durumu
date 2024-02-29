@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Hava Durumu</title>
+</head>
+
+<body>
+    <div id="hero">
+
+    
+    <div class="wrapper">
+        <header><i class="bx bx-left-arrow-alt"></i></header>
+        <section class="input-part">
+            <p class="info-txt"></p>
+            <input type="text" placeholder="sehir ismi" spellcheck="false" required>
+            <div class="seperator"></div>
+            <button>Konumu Belirle</button>
+            <button onclick="">Ortalama Sıcaklığı Göster</button>
+        </section>
+        <section class="weather-part">
+            <img src="cloud.svg" alt="weather-icon">
+            <div class="temp">
+                <span class="numb">_</span>
+                <span class="deg">°</span>
+            </div>
+            <div class="weather">_ _</div>
+            <div class="location">
+                <i class="bx bx-map"></i>
+                <span>_ _</span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="details">
+                        <div class="temp">
+                            <span class="numb-2">_</span>
+                            <span class="deg">°</span>
+                        </div>
+                        <p>Feels Like</p>
+                    </div>
+                </div>
+                <div class="column humidity">
+                    <i class="bx bxs-droplet"></i>
+                    <div class="details">
+                        <span class="numb">_</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script src="jv.mjs" type="module">
+    import axios from 'https://cdn.skypack.dev/axios';
+      </script>
+      
+</body>
+</html>
